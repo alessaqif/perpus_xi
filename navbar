@@ -1,0 +1,26 @@
+<?php 
+
+session_start();
+
+    if($_SESSION['status_login']!=true){
+
+        header('location: login.php');
+
+    }
+
+?>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Perubahan Perubahan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tambah_kelas.php">Tambah kelas</a></li>
+            <li><a class="dropdown-item" href="tambah_siswa.php">Tambah Siswa</a></li>
+            <li><a class="dropdown-item" href="tampil_siswa.php">Tampil siswa</a></li>
+            <li><a class="dropdown-item" href="logout.php">LOG OUT</a></li>
+            
+          </ul>
+       
+    </div>
+  </div>
+</nav>
