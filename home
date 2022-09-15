@@ -1,0 +1,20 @@
+<?php 
+
+    include "header.php";
+    
+
+?>
+
+<h2>Selamat datang <?=$_SESSION['nama_siswa']?> di website Perpus Online.</h2>
+<?php
+ echo '<a href="tambah_buku.php">
+      <input type="submit"/>
+  </a>';
+?>
+
+<?php
+
+    include "footer.php";
+     
+   
+?>
